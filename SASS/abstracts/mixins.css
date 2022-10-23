@@ -1,1 +1,41 @@
-@keyframes apparition{0%{transform:scale(0)}100%{transform:scale(1)}}@keyframes texte{0%{text-shadow:0 0 7px #ff79da}90%{color:#9356dc;text-shadow:none}100%{color:#9356dc;text-shadow:0 0 7px #ff79da}}@keyframes disparu{to{visibility:hidden}}@keyframes heart{0%{transform:scale(0)}100%{transform:scale(1.2)}}
+@keyframes apparition {
+    0% {
+        transform: scale(0)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+@keyframes texte {
+    0% {
+        text-shadow: 0 0 7px #ff79da
+    }
+
+    90% {
+        color: #9356dc;
+        text-shadow: none
+    }
+
+    100% {
+        color: #9356dc;
+        text-shadow: 0 0 7px #ff79da
+    }
+}
+
+@keyframes disparu {
+    to {
+        visibility: hidden
+    }
+}
+
+@keyframes heart {
+    0% {
+        transform: scale(0)
+    }
+
+    100% {
+        transform: scale(1.2)
+    }
+}
