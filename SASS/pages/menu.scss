@@ -1,4 +1,4 @@
-@use '../abstracts/index.scss';
+@use '../abstracts/index';
 @use '../layout/footer.scss';
 @use "../layout/explorer.scss";
 @use "../layout/header.scss";
@@ -118,19 +118,27 @@ transition-duration: 1s;
       
       .card__plat__description{
         
-        padding: 1rem;
+        padding-left: 1rem;
         overflow: hidden;
               p {
           overflow: hidden;
           white-space: nowrap;
           text-overflow: ellipsis;
           cursor: pointer;
+          
+    margin-top: 10px;
+    margin-bottom: 10px;
+
         }
         h4{
           overflow: hidden;
           white-space: nowrap;
           text-overflow: ellipsis;
           cursor: pointer;
+          
+    margin-top: 10px;
+    margin-bottom: 10px;
+
         }
           }
 
