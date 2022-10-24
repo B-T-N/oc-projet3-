@@ -11,38 +11,6 @@
     }
 }
 
-@keyframes texte {
-    0% {
-        text-shadow: 0 0 7px #ff79da
-    }
-
-    90% {
-        color: #9356dc;
-        text-shadow: none
-    }
-
-    100% {
-        color: #9356dc;
-        text-shadow: 0 0 7px #ff79da
-    }
-}
-
-@keyframes disparu {
-    to {
-        visibility: hidden
-    }
-}
-
-@keyframes heart {
-    0% {
-        transform: scale(0)
-    }
-
-    100% {
-        transform: scale(1.2)
-    }
-}
-
 body,
 html {
     margin: 0;
@@ -266,7 +234,7 @@ header .logo h1 {
     }
 
     100% {
-        transform: scale(1.2)
+        transform: scale(1)
     }
 }
 
@@ -394,7 +362,7 @@ h3::after {
 }
 
 .card__plat__description {
-    padding-left: 1rem;
+    padding: 1rem;
     overflow: hidden
 }
 
@@ -402,19 +370,14 @@ h3::after {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    cursor: pointer;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 13px
+    cursor: pointer
 }
 
 .card__plat__description h4 {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    cursor: pointer;
-    margin-top: 10px;
-    margin-bottom: 10px
+    cursor: pointer
 }
 
 .card__plat__prix {
@@ -462,7 +425,7 @@ h3::after {
     }
 
     100% {
-        transform: scale(1.2)
+        transform: scale(1)
     }
 }
 

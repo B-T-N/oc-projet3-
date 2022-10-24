@@ -1,0 +1,33 @@
+@use "../abstracts/index.scss";
+.explorer {
+  background-color: index.$color-primary;
+  background-image: linear-gradient(
+    0deg,
+    rgba(147, 86, 220, 0.9),
+    rgba(255, 121, 218, 0.9)
+  );
+  @include index.shadowbox;
+  padding-left: 40px;
+  padding-right: 40px;
+  cursor: pointer;
+  height: 75px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 60px;
+  color: white;
+}
+.home__blocreservez {
+  text-align: center;
+  background-color: index.$color-quinquennial;
+  padding: 20px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  h1 {
+    font-size: 175%;
+    padding-right: 80px;
+    padding-left: 80px;
+  }
+  p {
+    font-size: large;
+  }
+}
