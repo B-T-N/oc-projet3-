@@ -1,0 +1,14 @@
+@use "../abstracts/index";
+.home__emplacement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: inde;
+  padding: 10px;
+  @include index.shadowbox;
+
+  i {
+    padding-right: 20px;
+  }
+}
