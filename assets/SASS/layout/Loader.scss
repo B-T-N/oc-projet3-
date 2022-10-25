@@ -1,0 +1,54 @@
+@use "../abstracts/index";
+.loader {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: index.$color-quinquennial;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+  animation: disparu 2s forwards ease-in-out;
+  transition-duration: 1s;
+  opacity: 0.9;
+}
+
+.lettres {
+  color: index.$color-primary;
+  font-size: 80px;
+  letter-spacing: 15px;
+  margin-bottom: 100px;
+  animation: texte 1.5s linear infinite;
+}
+.lettres:nth-child(1) {
+  animation-delay: 0.1s;
+  color: index.$color-tertiary;
+}
+.lettres:nth-child(2) {
+  animation-delay: 0.2s;
+  color: index.$color-secondary;
+}
+.lettres:nth-child(3) {
+  animation-delay: 0.3s;
+  color: index.$color-primary;
+}
+.lettres:nth-child(4) {
+  animation-delay: 0.4s;
+  color: index.$color-tertiary;
+}
+.lettres:nth-child(5) {
+  animation-delay: 0.5s;
+  color: index.$color-secondary;
+}
+.lettres:nth-child(6) {
+  animation-delay: 0.6s;
+  color: index.$color-primary;
+}
+.lettres:nth-child(7) {
+  animation-delay: 0.7s;
+  color: index.$color-tertiary;
+}
+.lettres:nth-child(8) {
+  animation-delay: 0.8s;
+  color: index.$color-secondary;
+}
