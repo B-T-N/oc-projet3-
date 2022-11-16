@@ -5,11 +5,13 @@
 
 @keyframes apparition {
     0% {
+        opacity: 0%;
         transform: scale(0)
     }
 
     100% {
-        transform: scale(1)
+        transform: scale(1);
+        opacity: 100%
     }
 }
 
@@ -47,11 +49,13 @@
 
 @keyframes apparition {
     0% {
+        opacity: 0%;
         transform: scale(0)
     }
 
     100% {
-        transform: scale(1)
+        transform: scale(1);
+        opacity: 100%
     }
 }
 
@@ -121,11 +125,13 @@
 
 @keyframes apparition {
     0% {
+        opacity: 0%;
         transform: scale(0)
     }
 
     100% {
-        transform: scale(1)
+        transform: scale(1);
+        opacity: 100%
     }
 }
 
@@ -177,11 +183,13 @@
 
 @keyframes apparition {
     0% {
+        opacity: 0%;
         transform: scale(0)
     }
 
     100% {
-        transform: scale(1)
+        transform: scale(1);
+        opacity: 100%
     }
 }
 
@@ -229,6 +237,13 @@
 .home__fonctionnemnt h1 {
     margin-top: 60px;
     margin-bottom: 60px
+}
+
+@media(min-width: 1000px) {
+    .home__fonctionnemnt h1 {
+        display: flex;
+        justify-content: center
+    }
 }
 
 .home__fonctionnemnt ol {
@@ -300,6 +315,50 @@ html {
     scroll-behavior: smooth
 }
 
+@keyframes apparition {
+    0% {
+        opacity: 0%;
+        transform: scale(0)
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 100%
+    }
+}
+
+@keyframes texte {
+    0% {
+        text-shadow: 0 0 7px #ff79da
+    }
+
+    90% {
+        color: #9356dc;
+        text-shadow: none
+    }
+
+    100% {
+        color: #9356dc;
+        text-shadow: 0 0 7px #ff79da
+    }
+}
+
+@keyframes disparu {
+    to {
+        visibility: hidden
+    }
+}
+
+@keyframes heart {
+    0% {
+        transform: scale(0)
+    }
+
+    100% {
+        transform: scale(1.2)
+    }
+}
+
 footer {
     width: 100%;
     padding: 15px;
@@ -327,6 +386,25 @@ footer i {
     padding-bottom: 10px
 }
 
+@media(min-width: 1000px) {
+    .footer__logo {
+        align-items: center;
+        display: flex;
+        flex-direction: column
+    }
+}
+
+@media(min-width: 1000px) {
+    .footer__liste {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: space-around;
+        align-items: center
+    }
+}
+
 header {
     z-index: 1;
     position: relative;
@@ -347,11 +425,13 @@ header .logo h1 {
 
 @keyframes apparition {
     0% {
+        opacity: 0%;
         transform: scale(0)
     }
 
     100% {
-        transform: scale(1)
+        transform: scale(1);
+        opacity: 100%
     }
 }
 
@@ -539,11 +619,13 @@ html {
 
 @keyframes apparition {
     0% {
+        opacity: 0%;
         transform: scale(0)
     }
 
     100% {
-        transform: scale(1)
+        transform: scale(1);
+        opacity: 100%
     }
 }
 
@@ -657,11 +739,13 @@ main {
 
 @keyframes apparition {
     0% {
+        opacity: 0%;
         transform: scale(0)
     }
 
     100% {
-        transform: scale(1)
+        transform: scale(1);
+        opacity: 100%
     }
 }
 
