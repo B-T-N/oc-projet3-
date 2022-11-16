@@ -10,7 +10,7 @@
   }
 }
 @mixin gradien {
-  &:active,
+  &:focus,
   &:focus {
     background: linear-gradient(
       variables.$color-primary,
