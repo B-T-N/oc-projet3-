@@ -10,7 +10,7 @@
   }
 }
 @mixin gradien {
-  &:focus,
+  &:hover,
   &:focus {
     background: linear-gradient(
       variables.$color-primary,
@@ -36,10 +36,12 @@
 
 @keyframes apparition {
   0% {
+    opacity: 0%;
     transform: scale(0);
   }
   100% {
     transform: scale(1);
+    opacity: 100%;
   }
 }
 @mixin shadowbox {
