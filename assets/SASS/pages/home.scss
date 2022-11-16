@@ -1,21 +1,202 @@
-@use "../abstracts/index.scss";
-@import "../layout/explorer.scss";
-@import "../layout/emplacement.scss";
-@import "../layout/fonctionnement.scss";
-@import "../layout/footer";
-@import "../layout/header.scss";
-@import "../layout/menu.scss";
-@import "../base/typography.scss";
-@import "../layout/Loader.scss";
+@use "../abstracts/index";
+@use "../layout/footer.scss";
+@use "../layout/explorer.scss";
+@use "../layout/header.scss";
+@use "../layout/menu.scss";
+@use "../base/typography.scss";
+
 * {
   box-sizing: border-box;
   text-decoration: none;
+  font-family: typography.$Roboto;
+  line-height: 20px;
 }
 a {
   text-decoration: none;
   color: inherit;
 }
-/*balises cementique */
-main {
-  background-color: #fffefe;
+.logo {
+  i {
+    position: absolute;
+    left: 1em;
+    bottom: 22px;
+    font-size: 20px;
+  }
 }
+#page_menu {
+  background-color: index.$color-quinquennial;
+}
+main {
+  margin-top: -6em;
+  background-color: index.$color-quinquennial;
+  border-radius: 25px;
+  z-index: 1;
+  position: relative;
+}
+.banners {
+  img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    height: 400px;
+  }
+}
+.menu__titre {
+  h2 {
+    font-family: typography.$Shrikhand;
+  }
+}
+.restaurant__menu {
+  padding: 1rem;
+}
+.menu__all {
+  overflow: hidden;
+}
+.menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  @media (max-width: index.$breakpoints) {
+    grid-template-columns: 1fr;
+  }
+}
+h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+  position: relative;
+  margin-bottom: 1rem;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 1.5rem;
+    left: 0;
+    height: 0.25rem;
+    width: 3rem;
+    background-color: index.$color-tertiary;
+  }
+}
+.card__menu {
+  background-color: white;
+  border-radius: 1rem;
+  overflow: hidden;
+  margin: 0.5rem;
+  display: flex;
+  cursor: pointer;
+  max-width: 100%;
+  @include index.shadowbox;
+  animation: apparition 1s;
+  transform: scale(0);
+animation-fill-mode: both;
+
+  &:hover {
+    .card__plat__prix_check {
+      margin-right: 0px;
+    }
+    .card__plat__prix_check--icone {
+      transform: rotate(0);
+    }
+  }
+  .card__plat__prix_check {
+    background-color: index.$color-tertiary;
+    margin: -1rem -5rem -1rem 1rem;
+    width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.5s;
+  }
+  .card__plat__prix_check--icone {
+    height: 1.6rem;
+    width: 1.6rem;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    transform: rotate(180deg);
+    transition-duration: 1s;
+  }
+}
+
+.card__plat__description {
+  padding-left: 1rem;
+  overflow: hidden;
+  p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: pointer;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 13px;
+  }
+  h4 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: pointer;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+.card__plat__prix {
+  font-weight: 700;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0.5rem;
+  margin-left: auto;
+  cursor: pointer;
+}
+.explorer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.card-like {
+  position: absolute;
+  top: 1em;
+  right: 30px;
+  cursor: pointer;
+
+  @include index.gradien;
+}
+
+.card__menu:nth-child(1) {
+  animation-delay: 100ms;
+}
+.card__menu:nth-child(2) {
+  animation-delay: 300ms;
+}
+.card__menu:nth-child(3) {
+  animation-delay: 500ms;
+}
+.card__menu:nth-child(4) {
+  animation-delay: 700ms;
+}
+.card__menu:nth-child(5) {
+  animation-delay: 900ms;
+}
+.card__menu:nth-child(6) {
+  animation-delay: 1100ms;
+}
+.card__menu:nth-child(7) {
+  animation-delay: 1300ms;
+}
+.card__menu:nth-child(8) {
+  animation-delay: 1500ms;
+}
+.card__menu:nth-child(9) {
+  animation-delay: 1700ms;
+}
+
+/*# sourceMappingURL=styles.css.map */
