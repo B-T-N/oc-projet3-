@@ -239,8 +239,7 @@ header .logo h1 {
     position: absolute;
     cursor: pointer;
     right: 1em;
-    top: .5em;
-    animation: like .5
+    top: .5em
 }
 
 @media(min-width: 1000px) {
@@ -250,8 +249,9 @@ header .logo h1 {
     }
 }
 
-.home__card__menu .card__texte .card-like:active .home__card__menu .card__texte .card-like:hover {
-    background: linear-gradient(#9356DC, #FF79DA);
+.home__card__menu .card__texte .card-like:hover,
+.home__card__menu .card__texte .card-like:focus {
+    background: linear-gradient(#9356dc, #ff79da);
     color: #fff;
     font-weight: 600;
     transform: scale(1.2);
@@ -273,7 +273,8 @@ header .logo h1 {
 * {
     box-sizing: border-box;
     text-decoration: none;
-    font-family: "Roboto", "sans-serif"
+    font-family: "Roboto", "sans-serif";
+    line-height: 20px
 }
 
 a {
@@ -445,8 +446,9 @@ h3::after {
     cursor: pointer
 }
 
-.card-like:active .card-like:hover {
-    background: linear-gradient(#9356DC, #FF79DA);
+.card-like:hover,
+.card-like:focus {
+    background: linear-gradient(#9356dc, #ff79da);
     color: #fff;
     font-weight: 600;
     transform: scale(1.2);
