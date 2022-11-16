@@ -10,6 +10,9 @@
   h1 {
     margin-top: 60px;
     margin-bottom: 60px;
+    @media (min-width: index.$breakpoints) {
+    display: flex;
+    justify-content: center;}
   }
   & ol {
     display: flex;
