@@ -86,6 +86,8 @@ h3 {
   max-width: 100%;
   @include index.shadowbox;
   animation: apparition 1s;
+  transform: scale(0);
+animation-fill-mode: both;
 
   &:hover {
     .card__plat__prix_check {
