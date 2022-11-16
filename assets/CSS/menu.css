@@ -3,11 +3,13 @@
 
 @keyframes apparition {
     0% {
+        opacity: 0%;
         transform: scale(0)
     }
 
     100% {
-        transform: scale(1)
+        transform: scale(1);
+        opacity: 100%
     }
 }
 
@@ -75,6 +77,25 @@ footer i {
     font-weight: 500;
     padding-top: 10px;
     padding-bottom: 10px
+}
+
+@media(min-width: 1000px) {
+    .footer__logo {
+        align-items: center;
+        display: flex;
+        flex-direction: column
+    }
+}
+
+@media(min-width: 1000px) {
+    .footer__liste {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: space-around;
+        align-items: center
+    }
 }
 
 .explorer {
@@ -361,7 +382,9 @@ h3::after {
     cursor: pointer;
     max-width: 100%;
     box-shadow: .25rem .25rem 10px rgba(0, 0, 0, .25);
-    animation: apparition 1s
+    animation: apparition 1s;
+    transform: scale(0);
+    animation-fill-mode: both
 }
 
 .card__menu:hover .card__plat__prix_check {
