@@ -509,7 +509,7 @@ header .logo h1 {
     }
 }
 
-.home__card__menu .card__texte .card-like:active,
+.home__card__menu .card__texte .card-like:hover,
 .home__card__menu .card__texte .card-like:focus {
     background: linear-gradient(#9356dc, #ff79da);
     color: #fff;
